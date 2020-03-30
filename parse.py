@@ -8,6 +8,8 @@ html = html.replace('▫', '')
 
 soupe = Soup(html, 'lxml')
 
+titres = open('titres', 'w')
+
 for num_colonne, colonne in enumerate(soupe.select('table colgroup col')):
 
     if 'texte-col-pastille' in colonne.attrs['class']:
@@ -16,7 +18,7 @@ for num_colonne, colonne in enumerate(soupe.select('table colgroup col')):
     fichier = 'texte_%s.md' % (str(num_colonne).rjust(2, '0'))
 
     titre = soupe.select('table #head-fixed .texte-col')[num_colonne].text.strip()
-    print(titre)
+    print(titre, file=titres)
 
     print(fichier)
 

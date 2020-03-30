@@ -1,11 +1,4 @@
-titres = """Texte du projet de loi
-Texte adopté par la commission de l’Assemblée nationale en première lecture
-Texte adopté par l’Assemblée nationale en première lecture
-Texte adopté par la commission du Sénat en première lecture
-Texte adopté par le Sénat en première lecture
-Texte adopté en commission mixte paritaire
-Texte définitif établi au Sénat
-Texte promulgué""".split('\n')
+titres = open('titres').read().strip().split('\n')
 
 for i, titre in enumerate(titres):
 	titre = titre.strip()
