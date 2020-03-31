@@ -10,4 +10,4 @@ Promulgués:
 
 En cours:
 
-- [Projet de loi instituant un système universel de retraite](https://github.com/mdamien/lois-en-construction/commits/systeme_universel_de_retraite)Projet de loi instituant un système universel de retraite
+- [Projet de loi instituant un système universel de retraite](https://github.com/mdamien/lois-en-construction/commits/systeme_universel_de_retraite)
